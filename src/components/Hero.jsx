@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Sparkles, Calendar } from "lucide-react";
 
@@ -120,12 +121,12 @@ export default function Hero({ openBooking }) {
           className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto justify-center"
         >
           {/* Explore Services CTA */}
-          <a
-            href="#services"
+          <Link
+            href="/services"
             className="flex items-center justify-center h-14 px-8 rounded-full bg-gold-primary text-[#050505] text-xs font-sans tracking-[0.2em] font-bold border border-gold-primary transition-all duration-300 hover:bg-transparent hover:text-gold-primary hover:scale-105 hover:shadow-[0_0_25px_rgba(212,175,55,0.4)]"
           >
             EXPLORE SERVICES
-          </a>
+          </Link>
         </motion.div>
       </div>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -13,7 +14,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand Col */}
           <div className="flex flex-col space-y-5">
-            <a href="#home" className="flex items-center gap-3">
+            <Link href="/" className="flex items-center gap-3">
               <div className="flex flex-col items-start select-none font-sans">
                 <div className="text-xl font-black tracking-[0.12em] text-[#f5f5f3] leading-none">
                   H<span className="text-gold-primary">A</span>IR RIZER LUXE
@@ -27,7 +28,7 @@ export default function Footer() {
                   HAIR | MAKEUP | NAIL | BEAUTY
                 </div>
               </div>
-            </a>
+            </Link>
             <p className="text-sm text-[#f5f5f3]/60 leading-relaxed font-light">
               Elevate Your Beauty, One Rizer Luxe Experience at a Time. Rediscover luxury grooming tailored to your style.
             </p>
@@ -84,29 +85,29 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <a href="#home" className="text-sm text-[#f5f5f3]/60 hover:text-gold-primary transition-colors font-light">
+                <Link href="/" className="text-sm text-[#f5f5f3]/60 hover:text-gold-primary transition-colors font-light">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about" className="text-sm text-[#f5f5f3]/60 hover:text-gold-primary transition-colors font-light">
+                <Link href="/about" className="text-sm text-[#f5f5f3]/60 hover:text-gold-primary transition-colors font-light">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-sm text-[#f5f5f3]/60 hover:text-gold-primary transition-colors font-light">
+                <Link href="/services" className="text-sm text-[#f5f5f3]/60 hover:text-gold-primary transition-colors font-light">
                   Our Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#why-choose-us" className="text-sm text-[#f5f5f3]/60 hover:text-gold-primary transition-colors font-light">
+                <Link href="/why-choose-us" className="text-sm text-[#f5f5f3]/60 hover:text-gold-primary transition-colors font-light">
                   Why Choose Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="text-sm text-[#f5f5f3]/60 hover:text-gold-primary transition-colors font-light">
+                <Link href="/contact" className="text-sm text-[#f5f5f3]/60 hover:text-gold-primary transition-colors font-light">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -118,24 +119,24 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <a href="#services" className="text-sm text-[#f5f5f3]/60 hover:text-gold-primary transition-colors font-light">
+                <Link href="/services" className="text-sm text-[#f5f5f3]/60 hover:text-gold-primary transition-colors font-light">
                   Classic Haircut
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-sm text-[#f5f5f3]/60 hover:text-gold-primary transition-colors font-light">
+                <Link href="/services" className="text-sm text-[#f5f5f3]/60 hover:text-gold-primary transition-colors font-light">
                   Beard & Shave
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-sm text-[#f5f5f3]/60 hover:text-gold-primary transition-colors font-light">
+                <Link href="/services" className="text-sm text-[#f5f5f3]/60 hover:text-gold-primary transition-colors font-light">
                   Facials & Skin Care
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-sm text-[#f5f5f3]/60 hover:text-gold-primary transition-colors font-light">
+                <Link href="/services" className="text-sm text-[#f5f5f3]/60 hover:text-gold-primary transition-colors font-light">
                   Nails & Grooming
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -174,13 +175,13 @@ export default function Footer() {
             &copy; {currentYear} HAIR RIZER LUXE Unisex Salon. All Rights Reserved.
           </p>
           <div className="flex gap-6 text-xs text-[#f5f5f3]/40 font-light">
-            <a href="#about" className="hover:text-gold-primary transition-colors">
+            <Link href="/about" className="hover:text-gold-primary transition-colors">
               Privacy Policy
-            </a>
+            </Link>
             <span>|</span>
-            <a href="#about" className="hover:text-gold-primary transition-colors">
+            <Link href="/about" className="hover:text-gold-primary transition-colors">
               Terms of Service
-            </a>
+            </Link>
           </div>
         </div>
       </div>

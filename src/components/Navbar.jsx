@@ -88,7 +88,7 @@ export default function Navbar({ openBooking }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             {/* Custom HTML/CSS Logo matching maps type */}
-            <Link href="/#home" className="flex items-center gap-3 group">
+            <Link href="/" className="flex items-center gap-3 group">
               <div className="flex flex-col items-start select-none font-sans">
                 <div className="text-lg sm:text-xl font-black tracking-[0.12em] text-[#f5f5f3] leading-none transition-colors duration-300 group-hover:text-gold-light">
                   H<span className="text-gold-primary">A</span>IR RIZER LUXE
