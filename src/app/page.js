@@ -1,0 +1,92 @@
+"use client";
+
+import React, { useState, useEffect } from "react";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Services from "@/components/Services";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import Vision from "@/components/Vision";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import WhatsAppWidget from "@/components/WhatsAppWidget";
+import AppointmentModal from "@/components/AppointmentModal";
+import SplashScreen from "@/components/SplashScreen";
+import ServiceModal from "@/components/ServiceModal";
+
+export default function Home() {
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
+  const [showSplash, setShowSplash] = useState(true);
+  const [isFadingOut, setIsFadingOut] = useState(false);
+  const [activeService, setActiveService] = useState(null);
+  const [preselectedService, setPreselectedService] = useState("");
+
+  const openBooking = () => {
+    setPreselectedService("");
+    setIsBookingOpen(true);
+  };
+  const closeBooking = () => setIsBookingOpen(false);
+
+  useEffect(() => {
+    // Start fading out after 2.0 seconds
+    const fadeTimer = setTimeout(() => {
+      setIsFadingOut(true);
+    }, 2000);
+
+    // Unmount completely after 2.6 seconds (allowing 600ms transition time)
+    const removeTimer = setTimeout(() => {
+      setShowSplash(false);
+    }, 2600);
+
+    return () => {
+      clearTimeout(fadeTimer);
+      clearTimeout(removeTimer);
+    };
+  }, []);
+
+  return (
+    <>
+      <div className="relative min-h-screen bg-[#050505] text-[#f5f5f3] flex flex-col justify-between overflow-x-hidden font-sans">
+        {/* Global Scroll-to-Top Overlay & Navigation */}
+        <Navbar openBooking={openBooking} />
+
+        <main className="flex-1 flex flex-col">
+          {/* Sections */}
+          <Hero openBooking={openBooking} />
+          <About />
+          <Services onExplore={(service) => setActiveService(service)} />
+          <WhyChooseUs />
+          <Vision />
+          <Contact openBooking={openBooking} />
+        </main>
+
+        {/* Floating WhatsApp Chat Widget */}
+        <WhatsAppWidget />
+
+        {/* Appointment Popup Modal */}
+        <AppointmentModal
+          isOpen={isBookingOpen}
+          onClose={closeBooking}
+          preselectedService={preselectedService}
+        />
+
+        {/* Global Footer */}
+        <Footer />
+      </div>
+
+      {showSplash && <SplashScreen isFadingOut={isFadingOut} />}
+
+      {activeService && (
+        <ServiceModal
+          service={activeService}
+          onClose={() => setActiveService(null)}
+          onBook={() => {
+            setPreselectedService(activeService.title);
+            setActiveService(null);
+            setIsBookingOpen(true);
+          }}
+        />
+      )}
+    </>
+  );
+}
