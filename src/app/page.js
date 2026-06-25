@@ -13,6 +13,7 @@ import WhatsAppWidget from "@/components/WhatsAppWidget";
 import AppointmentModal from "@/components/AppointmentModal";
 import SplashScreen from "@/components/SplashScreen";
 import ServiceModal from "@/components/ServiceModal";
+import Works from "@/components/Works";
 
 export default function Home() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
@@ -64,6 +65,7 @@ export default function Home() {
           <Hero openBooking={openBooking} />
           <About />
           <Services onExplore={(service) => setActiveService(service)} />
+          <Works />
           <WhyChooseUs />
           <Vision />
           <Contact openBooking={openBooking} />
