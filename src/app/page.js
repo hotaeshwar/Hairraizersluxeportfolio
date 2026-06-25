@@ -28,6 +28,12 @@ export default function Home() {
   const closeBooking = () => setIsBookingOpen(false);
 
   useEffect(() => {
+    const hasSplashShown = typeof window !== "undefined" && sessionStorage.getItem("splash_shown");
+    if (hasSplashShown) {
+      setShowSplash(false);
+      return;
+    }
+
     // Start fading out after 2.0 seconds
     const fadeTimer = setTimeout(() => {
       setIsFadingOut(true);
@@ -36,6 +42,9 @@ export default function Home() {
     // Unmount completely after 2.6 seconds (allowing 600ms transition time)
     const removeTimer = setTimeout(() => {
       setShowSplash(false);
+      if (typeof window !== "undefined") {
+        sessionStorage.setItem("splash_shown", "true");
+      }
     }, 2600);
 
     return () => {

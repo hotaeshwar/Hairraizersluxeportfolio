@@ -26,11 +26,11 @@ export default function Navbar({ openBooking }) {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "/#home" },
-    { name: "About Us", href: "/#about" },
-    { name: "Our Services", href: "/#services" },
-    { name: "Why Choose Us", href: "/#why-choose-us" },
-    { name: "Contact", href: "/#contact" },
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about" },
+    { name: "Our Services", href: "/services" },
+    { name: "Why Choose Us", href: "/why-choose-us" },
+    { name: "Contact", href: "/contact" },
   ];
 
   // Static navbar render before hydration to completely avoid SSR discrepancies
