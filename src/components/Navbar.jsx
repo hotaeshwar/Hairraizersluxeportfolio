@@ -52,14 +52,14 @@ export default function Navbar({ openBooking }) {
                 HAIR | MAKEUP | NAIL | BEAUTY
               </div>
             </div>
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden lg:flex items-center space-x-8">
               {navLinks.map((link) => (
                 <div key={link.name} className="text-sm font-sans tracking-widest text-[#f5f5f3]/70 font-light">
                   {link.name}
                 </div>
               ))}
             </div>
-            <div className="hidden md:flex items-center">
+            <div className="hidden lg:flex items-center">
               <button
                 onClick={openBooking}
                 className="px-6 py-2.5 rounded-full border border-gold-primary/60 text-xs font-sans tracking-[0.2em] font-bold text-gold-primary cursor-pointer hover:bg-gold-primary hover:text-black transition-all duration-300"
@@ -106,7 +106,7 @@ export default function Navbar({ openBooking }) {
 
             {/* Desktop Navigation Links with sliding tab pill effect */}
             <div 
-              className="hidden md:flex items-center space-x-1"
+              className="hidden lg:flex items-center space-x-1"
               onMouseLeave={() => setHoveredLink(null)}
             >
               {navLinks.map((link) => (
@@ -129,7 +129,7 @@ export default function Navbar({ openBooking }) {
             </div>
 
             {/* CTA Button */}
-            <div className="hidden md:flex items-center">
+            <div className="hidden lg:flex items-center">
               <button
                 onClick={openBooking}
                 className="relative inline-flex items-center justify-center px-6 py-2.5 rounded-full border border-gold-primary/60 text-xs font-sans tracking-[0.2em] font-bold text-gold-primary overflow-hidden group transition-all duration-300 hover:text-[#050505] hover:border-gold-primary hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] cursor-pointer"
@@ -140,7 +140,7 @@ export default function Navbar({ openBooking }) {
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden flex items-center">
+            <div className="lg:hidden flex items-center">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="text-[#f5f5f3]/80 hover:text-gold-primary transition-colors duration-300 focus:outline-none"
@@ -160,7 +160,7 @@ export default function Navbar({ openBooking }) {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="md:hidden bg-[#0a0a0a]/95 border-b border-gold-primary/10 overflow-hidden"
+              className="lg:hidden bg-[#0a0a0a]/95 border-b border-gold-primary/10 overflow-hidden"
             >
               <div className="px-4 pt-2 pb-6 space-y-4 flex flex-col items-center">
                 {navLinks.map((link) => (
