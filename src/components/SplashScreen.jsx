@@ -17,19 +17,16 @@ export default function SplashScreen({ isFadingOut }) {
         }
         return prev + 2;
       });
-    }, 35); // Approx 1.75 seconds to reach 100%
+    }, 100); // Approx 5.0 seconds to reach 100%
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div
-      className={`fixed inset-0 bg-[#050505] z-[9999] flex flex-col items-center justify-center overflow-hidden transition-all duration-600 ease-in-out ${
+      className={`fixed inset-0 bg-[#ffffff] z-[9999] flex flex-col items-center justify-center overflow-hidden transition-all duration-600 ease-in-out ${
         isFadingOut ? "opacity-0 pointer-events-none scale-105" : "opacity-100"
       }`}
     >
-      {/* Background glowing gradient radial bubble */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] bg-gold-primary/10 rounded-full blur-[100px] pointer-events-none" />
-
       {/* Main Logo & Text Content */}
       <div className="relative z-10 flex flex-col items-center max-w-xs text-center px-4">
         
@@ -66,15 +63,12 @@ export default function SplashScreen({ isFadingOut }) {
               damping: 14,
               delay: 0.1,
             }}
-            className="w-[88%] h-[88%] rounded-full bg-[#050505] overflow-hidden flex items-center justify-center p-3 border border-gold-primary/20 shadow-2xl relative"
+            className="w-[88%] h-[88%] rounded-full bg-[#ffffff] overflow-hidden flex items-center justify-center p-3 border border-gold-primary/20 shadow-2xl relative"
           >
             {/* Logo image filling 92% of inner circle */}
-            <Image
+            <img
               src="/hairraiser.png"
-              alt="Hair Rizer Luxe Logo"
-              width={200}
-              height={200}
-              priority
+              alt="Hair Raiserz-66A Luxe Logo"
               className="object-contain w-[92%] h-[92%] group-hover:scale-105 transition-transform duration-300"
             />
           </motion.div>
@@ -87,7 +81,7 @@ export default function SplashScreen({ isFadingOut }) {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="font-sans text-[11px] tracking-[0.35em] uppercase font-bold gold-text-gradient select-none"
         >
-          Hairraizersluxe portfolio
+          Hair Raiserz-66A Luxe
         </motion.span>
 
         <motion.p

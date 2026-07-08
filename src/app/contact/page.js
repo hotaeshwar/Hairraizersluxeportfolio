@@ -13,7 +13,7 @@ export default function ContactPage() {
   const closeBooking = () => setIsBookingOpen(false);
 
   return (
-    <div className="relative min-h-screen bg-[#050505] text-[#f5f5f3] flex flex-col justify-between overflow-x-hidden font-sans">
+    <div className="relative min-h-screen bg-[#050505] text-[#f5f5f3] flex flex-col justify-between overflow-x-hidden font-sans" suppressHydrationWarning>
       <Navbar openBooking={openBooking} />
       <main className="flex-1 flex flex-col justify-center pt-24 pb-12">
         <Contact openBooking={openBooking} />

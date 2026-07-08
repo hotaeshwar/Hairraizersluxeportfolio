@@ -35,18 +35,18 @@ export default function Home() {
       return;
     }
 
-    // Start fading out after 2.0 seconds
+    // Start fading out after 5.0 seconds
     const fadeTimer = setTimeout(() => {
       setIsFadingOut(true);
-    }, 2000);
+    }, 5000);
 
-    // Unmount completely after 2.6 seconds (allowing 600ms transition time)
+    // Unmount completely after 5.6 seconds (allowing 600ms transition time)
     const removeTimer = setTimeout(() => {
       setShowSplash(false);
       if (typeof window !== "undefined") {
         sessionStorage.setItem("splash_shown", "true");
       }
-    }, 2600);
+    }, 5600);
 
     return () => {
       clearTimeout(fadeTimer);
@@ -56,7 +56,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="relative min-h-screen bg-[#050505] text-[#f5f5f3] flex flex-col justify-between overflow-x-hidden font-sans">
+      <div className="relative min-h-screen bg-[#050505] text-[#f5f5f3] flex flex-col justify-between overflow-x-hidden font-sans" suppressHydrationWarning>
         {/* Global Scroll-to-Top Overlay & Navigation */}
         <Navbar openBooking={openBooking} />
 

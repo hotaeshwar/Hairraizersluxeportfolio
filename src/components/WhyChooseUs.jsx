@@ -76,7 +76,7 @@ const itemVariants = {
 
 export default function WhyChooseUs() {
   return (
-    <section id="why-choose-us" className="py-24 bg-[#0a0a0a] relative overflow-hidden">
+    <section id="why-choose-us" className="py-24 bg-white relative overflow-hidden">
       {/* Decorative background glows */}
       <div className="absolute top-[20%] right-[-10%] w-[350px] h-[350px] bg-gold-primary/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-[20%] left-[-10%] w-[350px] h-[350px] bg-gold-dark/5 rounded-full blur-[120px] pointer-events-none" />
@@ -94,7 +94,7 @@ export default function WhyChooseUs() {
           >
             <span className="h-[1px] w-6 bg-gold-primary" />
             <span className="font-sans text-xs tracking-[0.3em] text-gold-primary uppercase font-bold">
-              THE RIZER LUXE ADVANTAGE
+              THE RAISERZ-66A LUXE ADVANTAGE
             </span>
             <span className="h-[1px] w-6 bg-gold-primary" />
           </motion.div>
@@ -104,7 +104,7 @@ export default function WhyChooseUs() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-serif text-4xl sm:text-5xl tracking-wide font-extrabold text-[#f5f5f3] mb-6"
+            className="font-serif text-4xl sm:text-5xl tracking-wide font-extrabold text-[#1a1a1a] mb-6"
           >
             Why <span className="gold-text-gradient">Choose Us</span>
           </motion.h2>
@@ -114,7 +114,7 @@ export default function WhyChooseUs() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="font-sans text-sm sm:text-base text-[#f5f5f3]/60 leading-relaxed font-light"
+            className="font-sans text-sm sm:text-base text-[#1a1a1a]/60 leading-relaxed font-light"
           >
             Elevate your grooming standard. We offer an unmatched blend of style, comfort, and professional mastery.
           </motion.p>
@@ -148,17 +148,17 @@ export default function WhyChooseUs() {
                     alt={feature.title}
                     width={32}
                     height={32}
-                    className="object-contain brightness-0 invert"
+                    className="object-contain brightness-0"
                   />
                 </div>
 
                 {/* Title */}
-                <h3 className="font-serif text-lg font-bold text-[#f5f5f3] mb-3 group-hover:text-gold-primary transition-colors duration-300">
+                <h3 className="font-serif text-lg font-bold text-[#1a1a1a] mb-3 group-hover:text-gold-primary transition-colors duration-300">
                   {feature.title}
                 </h3>
 
                 {/* Description */}
-                <p className="font-sans text-xs sm:text-sm text-[#f5f5f3]/60 leading-relaxed font-light group-hover:text-[#f5f5f3]/75 transition-colors duration-300">
+                <p className="font-sans text-xs sm:text-sm text-[#1a1a1a]/60 leading-relaxed font-light group-hover:text-[#1a1a1a]/75 transition-colors duration-300">
                   {feature.description}
                 </p>
               </motion.div>

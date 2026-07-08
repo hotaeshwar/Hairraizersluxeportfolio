@@ -56,7 +56,7 @@ export default function AppointmentModal({ isOpen, onClose, preselectedService }
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
             transition={{ type: "spring", duration: 0.5 }}
-            className="relative w-full max-w-lg p-8 rounded-3xl glass-panel gold-gradient-border shadow-[0_20px_50px_rgba(0,0,0,0.8),_0_0_30px_rgba(212,175,55,0.2)] overflow-hidden z-10"
+            className="relative w-full max-w-lg p-8 rounded-3xl glass-panel gold-gradient-border shadow-[0_20px_50px_rgba(0,0,0,0.15),_0_0_30px_rgba(212,175,55,0.2)] overflow-hidden z-10"
           >
             {/* Soft gold glow inside */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-2 bg-gold-primary/30 rounded-full blur-md" />
@@ -64,7 +64,7 @@ export default function AppointmentModal({ isOpen, onClose, preselectedService }
             {/* Close Button */}
             <button
               onClick={onClose}
-              className="absolute top-6 right-6 p-1.5 rounded-full border border-gold-primary/20 text-[#f5f5f3]/70 hover:text-gold-primary hover:border-gold-primary/60 transition-all duration-300 bg-black/40 focus:outline-none"
+              className="absolute top-6 right-6 p-1.5 rounded-full border border-gold-primary/20 text-[#1a1a1a]/70 hover:text-gold-primary hover:border-gold-primary/60 transition-all duration-300 bg-neutral-100 focus:outline-none"
               aria-label="Close modal"
             >
               <X className="w-4 h-4" />
@@ -76,10 +76,10 @@ export default function AppointmentModal({ isOpen, onClose, preselectedService }
                 <CalendarDays className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-serif text-2xl font-bold text-[#f5f5f3]">
+                <h3 className="font-serif text-2xl font-bold text-[#1a1a1a]">
                   Book <span className="gold-text-gradient">Appointment</span>
                 </h3>
-                <p className="text-xs text-[#f5f5f3]/50 font-light">
+                <p className="text-xs text-[#1a1a1a]/50 font-light">
                   Direct callback & slot confirmation request.
                 </p>
               </div>
@@ -91,7 +91,7 @@ export default function AppointmentModal({ isOpen, onClose, preselectedService }
               method="POST"
               className="space-y-4"
             >
-              <input type="hidden" name="_subject" value="New Appointment Booking Request - HAIR RIZER LUXE" />
+              <input type="hidden" name="_subject" value="New Appointment Booking Request - HAIR RAISERZ-66A LUXE" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
 
@@ -102,7 +102,7 @@ export default function AppointmentModal({ isOpen, onClose, preselectedService }
                   name="name"
                   placeholder="Your Full Name"
                   required
-                  className="w-full bg-[#050505] border border-gold-primary/20 hover:border-gold-primary/45 focus:border-gold-primary rounded-xl px-4 py-2.5 text-sm font-sans tracking-wide text-[#f5f5f3] focus:outline-none focus:ring-1 focus:ring-gold-primary/50 placeholder-[#f5f5f3]/35 transition-all duration-300"
+                  className="w-full bg-white border border-gold-primary/20 hover:border-gold-primary/45 focus:border-gold-primary rounded-xl px-4 py-2.5 text-sm font-sans tracking-wide text-[#1a1a1a] focus:outline-none focus:ring-1 focus:ring-gold-primary/50 placeholder-neutral-400 transition-all duration-300"
                 />
               </div>
 
@@ -110,11 +110,11 @@ export default function AppointmentModal({ isOpen, onClose, preselectedService }
                 <div>
                   <label className="text-[10px] font-sans tracking-widest text-gold-accent font-bold uppercase mb-1.5 block">Email Address</label>
                   <input
-                    type="email"
-                    name="email"
-                    placeholder="name@example.com"
-                    required
-                    className="w-full bg-[#050505] border border-gold-primary/20 hover:border-gold-primary/45 focus:border-gold-primary rounded-xl px-4 py-2.5 text-sm font-sans tracking-wide text-[#f5f5f3] focus:outline-none focus:ring-1 focus:ring-gold-primary/50 placeholder-[#f5f5f3]/35 transition-all duration-300"
+                     type="email"
+                     name="email"
+                     placeholder="name@example.com"
+                     required
+                     className="w-full bg-white border border-gold-primary/20 hover:border-gold-primary/45 focus:border-gold-primary rounded-xl px-4 py-2.5 text-sm font-sans tracking-wide text-[#1a1a1a] focus:outline-none focus:ring-1 focus:ring-gold-primary/50 placeholder-neutral-400 transition-all duration-300"
                   />
                 </div>
                 <div>
@@ -124,7 +124,7 @@ export default function AppointmentModal({ isOpen, onClose, preselectedService }
                     name="phone"
                     placeholder="Phone number"
                     required
-                    className="w-full bg-[#050505] border border-gold-primary/20 hover:border-gold-primary/45 focus:border-gold-primary rounded-xl px-4 py-2.5 text-sm font-sans tracking-wide text-[#f5f5f3] focus:outline-none focus:ring-1 focus:ring-gold-primary/50 placeholder-[#f5f5f3]/35 transition-all duration-300"
+                    className="w-full bg-white border border-gold-primary/20 hover:border-gold-primary/45 focus:border-gold-primary rounded-xl px-4 py-2.5 text-sm font-sans tracking-wide text-[#1a1a1a] focus:outline-none focus:ring-1 focus:ring-gold-primary/50 placeholder-neutral-400 transition-all duration-300"
                   />
                 </div>
               </div>
@@ -136,7 +136,7 @@ export default function AppointmentModal({ isOpen, onClose, preselectedService }
                     type="date"
                     name="preferred_date"
                     required
-                    className="w-full bg-[#050505] border border-gold-primary/20 hover:border-gold-primary/45 focus:border-gold-primary rounded-xl px-4 py-2.5 text-sm font-sans text-[#f5f5f3] focus:outline-none transition-all duration-300"
+                    className="w-full bg-white border border-gold-primary/20 hover:border-gold-primary/45 focus:border-gold-primary rounded-xl px-4 py-2.5 text-sm font-sans text-[#1a1a1a] focus:outline-none transition-all duration-300"
                   />
                 </div>
                 <div>
@@ -145,7 +145,7 @@ export default function AppointmentModal({ isOpen, onClose, preselectedService }
                     type="time"
                     name="preferred_time"
                     required
-                    className="w-full bg-[#050505] border border-gold-primary/20 hover:border-gold-primary/45 focus:border-gold-primary rounded-xl px-4 py-2.5 text-sm font-sans text-[#f5f5f3] focus:outline-none transition-all duration-300"
+                    className="w-full bg-white border border-gold-primary/20 hover:border-gold-primary/45 focus:border-gold-primary rounded-xl px-4 py-2.5 text-sm font-sans text-[#1a1a1a] focus:outline-none transition-all duration-300"
                   />
                 </div>
               </div>
@@ -157,7 +157,7 @@ export default function AppointmentModal({ isOpen, onClose, preselectedService }
                   required
                   value={selectedService}
                   onChange={(e) => setSelectedService(e.target.value)}
-                  className="w-full bg-[#050505] border border-gold-primary/20 hover:border-gold-primary/45 focus:border-gold-primary rounded-xl px-4 py-2.5 text-sm font-sans text-[#f5f5f3]/75 focus:outline-none focus:ring-1 focus:ring-gold-primary/50 transition-all duration-300"
+                  className="w-full bg-white border border-gold-primary/20 hover:border-gold-primary/45 focus:border-gold-primary rounded-xl px-4 py-2.5 text-sm font-sans text-[#1a1a1a]/75 focus:outline-none focus:ring-1 focus:ring-gold-primary/50 transition-all duration-300"
                 >
                   <option value="" disabled>Select Service...</option>
                   <option value="Classic Haircut">Classic Haircut</option>
@@ -174,7 +174,7 @@ export default function AppointmentModal({ isOpen, onClose, preselectedService }
                   name="message"
                   rows="3"
                   placeholder="Any hair/skin conditions or specific notes..."
-                  className="w-full bg-[#050505] border border-gold-primary/20 hover:border-gold-primary/45 focus:border-gold-primary rounded-xl px-4 py-2.5 text-sm font-sans tracking-wide text-[#f5f5f3] focus:outline-none focus:ring-1 focus:ring-gold-primary/50 placeholder-[#f5f5f3]/35 transition-all duration-300 resize-none"
+                  className="w-full bg-white border border-gold-primary/20 hover:border-gold-primary/45 focus:border-gold-primary rounded-xl px-4 py-2.5 text-sm font-sans tracking-wide text-[#1a1a1a] focus:outline-none focus:ring-1 focus:ring-gold-primary/50 placeholder-neutral-400 transition-all duration-300 resize-none"
                 ></textarea>
               </div>
 

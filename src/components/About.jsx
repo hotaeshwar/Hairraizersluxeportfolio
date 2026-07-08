@@ -7,7 +7,7 @@ import { Sparkles, Trophy, Users, HeartHandshake } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-[#0a0a0a] relative overflow-hidden">
+    <section id="about" className="py-24 bg-white relative overflow-hidden">
       {/* Background Soft Glows */}
       <div className="absolute top-[10%] right-[-10%] w-[300px] h-[300px] bg-gold-primary/5 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute bottom-[10%] left-[-10%] w-[300px] h-[300px] bg-gold-dark/5 rounded-full blur-[100px] pointer-events-none" />
@@ -30,14 +30,14 @@ export default function About() {
               </span>
             </div>
             
-            <h2 className="font-serif text-4xl sm:text-5xl tracking-wide font-extrabold leading-tight text-[#f5f5f3]">
+            <h2 className="font-serif text-4xl sm:text-5xl tracking-wide font-extrabold leading-tight text-[#1a1a1a]">
               Redefining Beauty <br />
               <span className="gold-text-gradient">As An Experience</span>
             </h2>
 
-            <div className="space-y-4 text-sm sm:text-base text-[#f5f5f3]/70 font-light leading-relaxed">
+            <div className="space-y-4 text-sm sm:text-base text-[#1a1a1a]/70 font-light leading-relaxed">
               <p>
-                At <strong className="text-gold-primary font-normal">Hair Rizer Luxe</strong>, we believe beauty is not just a service — it’s an experience. Since our inception, we’ve redefined grooming with precision, creativity, and care that go beyond the ordinary.
+                At <strong className="text-gold-primary font-normal">Hair Raiserz-66A Luxe</strong>, we believe beauty is not just a service — it’s an experience. Since our inception, we’ve redefined grooming with precision, creativity, and care that go beyond the ordinary.
               </p>
               <p>
                 Our salons combine cutting-edge styling, advanced hair, skin, and nail care, and an ambience of modern comfort. Each visit is designed to rejuvenate your confidence and leave you feeling your absolute best.
@@ -49,7 +49,7 @@ export default function About() {
                 We use premium, salon-grade products that are also available for home care — so your glow continues long after you step out of our doors.
               </p>
               <p className="font-serif text-lg text-gold-light italic pt-2">
-                At Hair Rizer Luxe, we don’t just style hair — we shape how you feel about yourself. Your journey to confidence, care, and sophistication begins here.
+                At Hair Raiserz-66A Luxe, we don’t just style hair — we shape how you feel about yourself. Your journey to confidence, care, and sophistication begins here.
               </p>
             </div>
 
@@ -60,8 +60,8 @@ export default function About() {
                   <Users className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-sans tracking-wider text-[#f5f5f3] font-bold">Expert Stylists</h4>
-                  <p className="text-xs text-[#f5f5f3]/50 font-light">Global beauty trends</p>
+                  <h4 className="text-sm font-sans tracking-wider text-[#1a1a1a] font-bold">Expert Stylists</h4>
+                  <p className="text-xs text-[#1a1a1a]/50 font-light">Global beauty trends</p>
                 </div>
               </div>
 
@@ -70,8 +70,8 @@ export default function About() {
                   <Trophy className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-sans tracking-wider text-[#f5f5f3] font-bold">Premium Care</h4>
-                  <p className="text-xs text-[#f5f5f3]/50 font-light">Salon-grade rituals</p>
+                  <h4 className="text-sm font-sans tracking-wider text-[#1a1a1a] font-bold">Premium Care</h4>
+                  <p className="text-xs text-[#1a1a1a]/50 font-light">Salon-grade rituals</p>
                 </div>
               </div>
             </div>
@@ -124,7 +124,7 @@ export default function About() {
               {/* Overlay Glass Tag */}
               <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl glass-panel text-center">
                 <span className="text-[9px] font-sans tracking-[0.2em] text-gold-accent font-bold uppercase mb-1 block">GOLDEN TOOLKIT</span>
-                <span className="text-xs text-[#f5f5f3]/95 font-light">Only top brands used</span>
+                <span className="text-xs text-[#1a1a1a]/95 font-light">Only top brands used</span>
               </div>
             </motion.div>
           </motion.div>
