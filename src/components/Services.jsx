@@ -160,7 +160,7 @@ export default function Services({ onExplore }) {
                   {/* Top Bar inside card */}
                   <div className="flex justify-between items-start mb-6">
                     {/* Icon container holding the PNG image instead of SVG */}
-                    <div className="w-16 h-16 rounded-2xl bg-gold-primary/10 border border-gold-primary/25 flex items-center justify-center p-2.5 group-hover:scale-110 group-hover:bg-gold-primary group-hover:border-gold-primary transition-all duration-500 shadow-md">
+                    <div className="w-16 h-16 rounded-2xl bg-gold-primary/10 border border-gold-primary/25 flex items-center justify-center p-2.5 shadow-md">
                       <Image
                         src={service.iconImage}
                         alt={service.title}
