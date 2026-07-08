@@ -166,7 +166,7 @@ export default function Services({ onExplore }) {
                         alt={service.title}
                         width={40}
                         height={40}
-                        className="object-contain brightness-0 invert"
+                        className="object-contain brightness-0"
                       />
                     </div>
 
