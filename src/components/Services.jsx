@@ -151,7 +151,7 @@ export default function Services({ onExplore }) {
                 key={service.title}
                 variants={cardVariants}
                 onClick={() => onExplore(service)}
-                className="group relative rounded-3xl p-8 glass-panel glass-panel-hover flex flex-col justify-between h-[300px] cursor-pointer"
+                className="group relative rounded-3xl p-8 bg-white border border-gold-primary/15 shadow-md flex flex-col justify-between h-[300px] cursor-pointer transition-all duration-400 hover:border-gold-primary/35 hover:-translate-y-2 hover:shadow-xl"
               >
                 {/* Accent Inner Border Shine */}
                 <div className="absolute inset-0 border border-gold-primary/0 group-hover:border-gold-primary/20 rounded-3xl transition-all duration-300 pointer-events-none" />

@@ -114,7 +114,7 @@ export default function Contact({ openBooking }) {
           >
             <div className="space-y-4">
               {/* Address card */}
-              <div className="flex gap-4 p-5 rounded-2xl glass-panel">
+              <div className="flex gap-4 p-5 rounded-2xl bg-white border border-gold-primary/20 shadow-md">
                 <MapPin className="w-5 h-5 text-gold-primary shrink-0 mt-1" />
                 <div>
                   <h4 className="font-serif text-base font-bold text-[#1a1a1a] mb-1">Our Location</h4>
@@ -125,7 +125,7 @@ export default function Contact({ openBooking }) {
               </div>
 
               {/* Contact info card */}
-              <div className="flex gap-4 p-5 rounded-2xl glass-panel">
+              <div className="flex gap-4 p-5 rounded-2xl bg-white border border-gold-primary/20 shadow-md">
                 <Phone className="w-5 h-5 text-gold-primary shrink-0 mt-1" />
                 <div>
                   <h4 className="font-serif text-base font-bold text-[#1a1a1a] mb-1">Connect Instantly</h4>
@@ -145,7 +145,7 @@ export default function Contact({ openBooking }) {
               </div>
 
               {/* Working hours card */}
-              <div className="flex gap-4 p-5 rounded-2xl glass-panel">
+              <div className="flex gap-4 p-5 rounded-2xl bg-white border border-gold-primary/20 shadow-md">
                 <Clock className="w-5 h-5 text-gold-primary shrink-0 mt-1" />
                 <div>
                   <h4 className="font-serif text-base font-bold text-[#1a1a1a] mb-1">Hours of Ritual</h4>

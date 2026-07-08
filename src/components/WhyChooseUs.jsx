@@ -133,7 +133,7 @@ export default function WhyChooseUs() {
               <motion.div
                 key={feature.title}
                 variants={itemVariants}
-                className="group relative rounded-2xl p-6 glass-panel flex flex-col items-start text-left overflow-hidden cursor-default transition-all duration-400 hover:border-gold-primary/35 hover:-translate-y-2 hover:shadow-[0_15px_30px_rgba(212,175,55,0.1)]"
+                className="group relative rounded-2xl p-6 bg-white border border-gold-primary/15 shadow-md flex flex-col items-start text-left overflow-hidden cursor-default transition-all duration-400 hover:border-gold-primary/35 hover:-translate-y-2 hover:shadow-xl"
               >
                 {/* Micro Border Glow */}
                 <div className="absolute inset-0 border border-gold-primary/0 group-hover:border-gold-primary/20 rounded-2xl transition-all duration-300 pointer-events-none" />
