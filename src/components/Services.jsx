@@ -151,10 +151,10 @@ export default function Services({ onExplore }) {
                 key={service.title}
                 variants={cardVariants}
                 onClick={() => onExplore(service)}
-                className="group relative rounded-3xl p-8 bg-white border border-gold-primary/15 shadow-md flex flex-col justify-between h-[300px] cursor-pointer transition-all duration-400 hover:border-gold-primary/35 hover:-translate-y-2 hover:shadow-xl"
+                className="relative rounded-3xl p-8 bg-white border border-gold-primary/15 shadow-md flex flex-col justify-between h-[300px] cursor-pointer"
               >
                 {/* Accent Inner Border Shine */}
-                <div className="absolute inset-0 border border-gold-primary/0 group-hover:border-gold-primary/20 rounded-3xl transition-all duration-300 pointer-events-none" />
+                <div className="absolute inset-0 border border-gold-primary/20 rounded-3xl pointer-events-none" />
 
                 <div>
                   {/* Top Bar inside card */}
@@ -171,13 +171,13 @@ export default function Services({ onExplore }) {
                     </div>
 
                     {/* Tag badge */}
-                    <span className="text-[10px] font-sans tracking-[0.2em] uppercase px-3 py-1 rounded-full border border-gold-primary/20 text-gold-dark bg-gold-primary/5 font-semibold group-hover:border-gold-primary/50 transition-colors duration-300">
+                    <span className="text-[10px] font-sans tracking-[0.2em] uppercase px-3 py-1 rounded-full border border-gold-primary/20 text-gold-dark bg-gold-primary/5 font-semibold">
                       {service.tag}
                     </span>
                   </div>
 
                   {/* Title */}
-                  <h3 className="font-serif text-2xl font-bold tracking-wide text-[#1a1a1a] mb-3 group-hover:text-gold-primary transition-colors duration-300">
+                  <h3 className="font-serif text-2xl font-bold tracking-wide text-[#1a1a1a] mb-3">
                     {service.title}
                   </h3>
 
@@ -188,9 +188,9 @@ export default function Services({ onExplore }) {
                 </div>
 
                 {/* Bottom Trigger link */}
-                <div className="flex items-center gap-2 text-xs font-sans tracking-[0.2em] text-gold-primary/80 group-hover:text-gold-primary uppercase font-bold transition-all duration-300">
+                <div className="flex items-center gap-2 text-xs font-sans tracking-[0.2em] text-gold-primary uppercase font-bold">
                   <span>EXPLORE RITUAL</span>
-                  <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-2" />
+                  <ArrowRight className="w-3.5 h-3.5" />
                 </div>
               </motion.div>
             );
