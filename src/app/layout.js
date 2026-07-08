@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://hairraizersluxe.buildingindiadigital.com'),
+  metadataBase: new URL('https://hairraiserz.buildingindiadigital.com'),
   title: "HAIR RAISERZ-66A LUXE Unisex Salon | Premium Luxury Salon Sector 66 A",
   description: "Elevate Your Beauty, One Raiserz-66A Luxe Experience at a Time. Hair Raiserz-66A Luxe Unisex Salon offers expert haircuts, styling, premium facials, skin rituals, and nail care in Sector 66 A, Airport Road, Punjab.",
   keywords: ["Hair Raiserz-66A Luxe", "HAIR RAISERZ-66A", "Unisex Salon Sector 66 A", "Luxury Salon Punjab", "Best Haircut Sector 66 A", "Grooming Salon Airport Road", "Salon Punjab 140306", "Premium Skin Care", "Hair Raiserz-66A Luxe Unisex Salon"],
