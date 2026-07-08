@@ -101,7 +101,7 @@ export default function Works() {
   }, [activeVideo]);
 
   return (
-    <section id="works" className="py-24 bg-[#050505] relative overflow-hidden">
+    <section id="works" className="py-24 bg-[#ffffff] relative overflow-hidden">
       {/* Background glow effects */}
       <div className="absolute top-[10%] right-[-10%] w-[350px] h-[350px] bg-gold-primary/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-[10%] left-[-10%] w-[350px] h-[350px] bg-gold-dark/5 rounded-full blur-[120px] pointer-events-none" />
@@ -128,7 +128,7 @@ export default function Works() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-serif text-4xl sm:text-5xl tracking-wide font-extrabold text-[#f5f5f3] mb-6"
+            className="font-serif text-4xl sm:text-5xl tracking-wide font-extrabold text-[#1a1a1a] mb-6"
           >
             Our <span className="gold-text-gradient">Works</span>
           </motion.h2>
@@ -138,7 +138,7 @@ export default function Works() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="font-sans text-sm sm:text-base text-[#f5f5f3]/60 leading-relaxed font-light"
+            className="font-sans text-sm sm:text-base text-[#1a1a1a]/60 leading-relaxed font-light"
           >
             Watch our master stylists in action. Hover over any video to preview and click for full screen showcase.
           </motion.p>

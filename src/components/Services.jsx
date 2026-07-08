@@ -93,7 +93,7 @@ const cardVariants = {
 
 export default function Services({ onExplore }) {
   return (
-    <section id="services" className="py-24 bg-[#050505] relative overflow-hidden">
+    <section id="services" className="py-24 bg-[#ffffff] relative overflow-hidden">
       {/* Glow Effects */}
       <div className="absolute top-[20%] left-[-10%] w-[350px] h-[350px] bg-gold-primary/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-[20%] right-[-10%] w-[350px] h-[350px] bg-gold-dark/5 rounded-full blur-[120px] pointer-events-none" />
@@ -121,7 +121,7 @@ export default function Services({ onExplore }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-serif text-4xl sm:text-5xl tracking-wide font-extrabold text-[#f5f5f3] mb-6"
+            className="font-serif text-4xl sm:text-5xl tracking-wide font-extrabold text-[#1a1a1a] mb-6"
           >
             Our <span className="gold-text-gradient">Services</span>
           </motion.h2>
@@ -131,7 +131,7 @@ export default function Services({ onExplore }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="font-sans text-sm sm:text-base text-[#f5f5f3]/60 leading-relaxed font-light"
+            className="font-sans text-sm sm:text-base text-[#1a1a1a]/60 leading-relaxed font-light"
           >
             Explore our expert grooming & styling services designed for comfort, class, and confidence.
           </motion.p>
@@ -171,18 +171,18 @@ export default function Services({ onExplore }) {
                     </div>
 
                     {/* Tag badge */}
-                    <span className="text-[10px] font-sans tracking-[0.2em] uppercase px-3 py-1 rounded-full border border-gold-primary/20 text-gold-light bg-black/40 font-semibold group-hover:border-gold-primary/50 transition-colors duration-300">
+                    <span className="text-[10px] font-sans tracking-[0.2em] uppercase px-3 py-1 rounded-full border border-gold-primary/20 text-gold-dark bg-gold-primary/5 font-semibold group-hover:border-gold-primary/50 transition-colors duration-300">
                       {service.tag}
                     </span>
                   </div>
 
                   {/* Title */}
-                  <h3 className="font-serif text-2xl font-bold tracking-wide text-[#f5f5f3] mb-3 group-hover:text-gold-primary transition-colors duration-300">
+                  <h3 className="font-serif text-2xl font-bold tracking-wide text-[#1a1a1a] mb-3 group-hover:text-gold-primary transition-colors duration-300">
                     {service.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="font-sans text-sm text-[#f5f5f3]/60 leading-relaxed font-light mb-6">
+                  <p className="font-sans text-sm text-[#1a1a1a]/60 leading-relaxed font-light mb-6">
                     {service.description}
                   </p>
                 </div>

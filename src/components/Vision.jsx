@@ -7,7 +7,7 @@ import { Quote } from "lucide-react";
 
 export default function Vision() {
   return (
-    <section className="py-20 bg-[#050505] relative overflow-hidden flex items-center justify-center">
+    <section className="py-20 bg-[#ffffff] relative overflow-hidden flex items-center justify-center">
       {/* Background Soft Golden Aura */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[450px] h-[450px] bg-gold-primary/10 rounded-full blur-[140px] pointer-events-none" />
 
@@ -20,7 +20,7 @@ export default function Vision() {
           className="p-[2.5px] rounded-[2.5rem] running-gold-stripes shadow-[0_0_35px_rgba(212,175,55,0.25)] relative overflow-hidden"
         >
           {/* Inner card with bg and padding */}
-          <div className="bg-[#0a0a0a] rounded-[calc(2.5rem-2.5px)] p-10 md:p-16 text-center relative overflow-hidden w-full h-full">
+          <div className="bg-[#ffffff] rounded-[calc(2.5rem-2.5px)] p-10 md:p-16 text-center relative overflow-hidden w-full h-full">
             {/* Quote icons */}
             <div className="absolute top-4 left-4 text-gold-primary/10 pointer-events-none">
               <Quote className="w-20 h-20 -scale-x-100" />
@@ -38,7 +38,7 @@ export default function Vision() {
                   alt="Our Vision"
                   width={56}
                   height={56}
-                  className="object-contain animate-pulse brightness-0 invert"
+                  className="object-contain animate-pulse text-gold-primary"
                 />
               </div>
 
@@ -48,7 +48,7 @@ export default function Vision() {
               </span>
 
               {/* Vision Body */}
-              <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl text-[#f5f5f3] leading-relaxed tracking-wide font-medium max-w-2xl mx-auto">
+              <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl text-[#1a1a1a] leading-relaxed tracking-wide font-medium max-w-2xl mx-auto">
                 &ldquo;Our vision is to become a trusted destination for premium hair, beauty, skin, and grooming services, where every client experiences <span className="gold-text-gradient font-bold">confidence, elegance,</span> and <span className="gold-text-gradient font-bold">personalized care</span>.&rdquo;
               </h3>
 

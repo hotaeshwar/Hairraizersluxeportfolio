@@ -56,7 +56,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="relative min-h-screen bg-[#050505] text-[#f5f5f3] flex flex-col justify-between overflow-x-hidden font-sans" suppressHydrationWarning>
+      <div className="relative min-h-screen bg-[#ffffff] text-[#1a1a1a] flex flex-col justify-between overflow-x-hidden font-sans" suppressHydrationWarning>
         {/* Global Scroll-to-Top Overlay & Navigation */}
         <Navbar openBooking={openBooking} />
 
